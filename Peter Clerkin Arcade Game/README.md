@@ -7,6 +7,8 @@
 
 ## Description
 
+![screen shot 2018-05-04 at 12 37 20](https://user-images.githubusercontent.com/25636000/39626518-2a4d240e-4f9a-11e8-900f-ed2c1a7810c3.png)
+
 A classic arcade game created using OOP JavaScript and HTML5 Canvas.
 
 ## How To Play The Game
