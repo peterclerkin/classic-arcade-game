@@ -40,7 +40,12 @@ var Player = function (x, y) {
 
 // Update the player's position, required method for game
 Player.prototype.update = function (dt) {
-    
+     // If the player reaches the water they are reset back to the beginning point
+     if (this.y < 0) {
+         alert("Congratulations, you have reached the water!");
+         this.x = 200;
+         this.y = 400;
+        };
 };
 
 // Renders the image of the user into the game
@@ -62,12 +67,6 @@ Player.prototype.handleInput = function (key) {
     };
     if (key === 'down' && this.y < 400) {
         this.y += 90;
-    };
-    
-    // If the player reaches the water they are reset back to the beginning point
-    if (this.y < 0) {
-        this.x = 200;
-        this.y = 400;
     };
 };
 
